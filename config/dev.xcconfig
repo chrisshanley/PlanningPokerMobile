@@ -1,0 +1,11 @@
+//
+//  local.xcconfig
+//  PlanningPokerMobile
+//
+//  Created by christopher shanley on 11/27/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+host = api-dev.easyagileplan.com
+protocol = https

@@ -1,0 +1,1351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8215AAB28566C710025EB81 /* InvitePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8215AAA28566C710025EB81 /* InvitePlayerView.swift */; };
+		F8215AAD28566DCE0025EB81 /* InviteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8215AAC28566DCE0025EB81 /* InviteViewModel.swift */; };
+		F8215AAF285AA9660025EB81 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8215AAE285AA9660025EB81 /* ButtonView.swift */; };
+		F8215AB1285BFBC50025EB81 /* JoinGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8215AB0285BFBC50025EB81 /* JoinGameView.swift */; };
+		F8215AB3285BFC560025EB81 /* JoinGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8215AB2285BFC560025EB81 /* JoinGameViewModel.swift */; };
+		F84CA7452752AF4000861575 /* PlanningPokerMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA7442752AF4000861575 /* PlanningPokerMobileApp.swift */; };
+		F84CA7472752AF4000861575 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA7462752AF4000861575 /* ContentView.swift */; };
+		F84CA7492752AF4200861575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84CA7482752AF4200861575 /* Assets.xcassets */; };
+		F84CA74C2752AF4200861575 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84CA74B2752AF4200861575 /* Preview Assets.xcassets */; };
+		F84CA7562752AF4200861575 /* PlanningPokerMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA7552752AF4200861575 /* PlanningPokerMobileTests.swift */; };
+		F84CA7602752AF4200861575 /* PlanningPokerMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA75F2752AF4200861575 /* PlanningPokerMobileUITests.swift */; };
+		F84CA7622752AF4200861575 /* PlanningPokerMobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA7612752AF4200861575 /* PlanningPokerMobileUITestsLaunchTests.swift */; };
+		F84CA7702752B10B00861575 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F84CA76F2752B10B00861575 /* Realm */; };
+		F84CA7722752B10B00861575 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F84CA7712752B10B00861575 /* RealmSwift */; };
+		F84CA7762752B14600861575 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA7752752B14600861575 /* User.swift */; };
+		F84CA7792752B5EE00861575 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA7782752B5EE00861575 /* WelcomeView.swift */; };
+		F84CA77B2752B63500861575 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA77A2752B63500861575 /* MainView.swift */; };
+		F84CA77D2752B66600861575 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA77C2752B66600861575 /* TeamView.swift */; };
+		F84CA77F2752B6A800861575 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA77E2752B6A800861575 /* GameView.swift */; };
+		F84CA7812752B6D400861575 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA7802752B6D400861575 /* AccountView.swift */; };
+		F84CA7852752BC3A00861575 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA7842752BC3A00861575 /* LoginView.swift */; };
+		F84CA7872752BCF200861575 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA7862752BCF200861575 /* LoginViewModel.swift */; };
+		F84CA7892752CD9900861575 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA7882752CD9900861575 /* ApiClient.swift */; };
+		F84CA78C2752DE4D00861575 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA78B2752DE4D00861575 /* LoginRequest.swift */; };
+		F84CA78F2752E16800861575 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA78E2752E16800861575 /* AppUtils.swift */; };
+		F84CA7942752E1FA00861575 /* dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F84CA7922752E1FA00861575 /* dev.xcconfig */; };
+		F84CA7952752E1FA00861575 /* prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F84CA7932752E1FA00861575 /* prod.xcconfig */; };
+		F84CA7A02752E41300861575 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CA79F2752E41300861575 /* LoginResponse.swift */; };
+		F852C020284C2DC700C4D750 /* CreateGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852C01F284C2DC700C4D750 /* CreateGameView.swift */; };
+		F852C022284C2E1400C4D750 /* QuickGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852C021284C2E1400C4D750 /* QuickGameViewModel.swift */; };
+		F852C024284C2E7C00C4D750 /* QuickGameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852C023284C2E7C00C4D750 /* QuickGameResponse.swift */; };
+		F852C026284C307F00C4D750 /* QuickGameRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852C025284C307F00C4D750 /* QuickGameRequest.swift */; };
+		F852C028284CEFF800C4D750 /* PlanningPokerGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852C027284CEFF700C4D750 /* PlanningPokerGame.swift */; };
+		F852C02A284CFC3400C4D750 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852C029284CFC3400C4D750 /* GameViewModel.swift */; };
+		F852C02C284CFC5200C4D750 /* PokerGameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852C02B284CFC5200C4D750 /* PokerGameItem.swift */; };
+		F8938AAC28620F6E00C62A12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8938AAB28620F6E00C62A12 /* GoogleService-Info.plist */; };
+		F8938AAF286210FA00C62A12 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F8938AAE286210FA00C62A12 /* FirebaseAnalytics */; };
+		F8938AB1286210FA00C62A12 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = F8938AB0286210FA00C62A12 /* FirebaseCrashlytics */; };
+		F8938AB3286210FA00C62A12 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = F8938AB2286210FA00C62A12 /* FirebaseInstallations */; };
+		F8938AB5286210FA00C62A12 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = F8938AB4286210FA00C62A12 /* FirebasePerformance */; };
+		F8938ABB286295B500C62A12 /* ErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8938ABA286295B500C62A12 /* ErrorViewModel.swift */; };
+		F8A07EB1284EC13600FF52B7 /* AddGameItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A07EB0284EC13500FF52B7 /* AddGameItemViewModel.swift */; };
+		F8A07EB3284EC80200FF52B7 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A07EB2284EC80200FF52B7 /* AddItemView.swift */; };
+		F8A07EB5285018A400FF52B7 /* PutGameItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A07EB4285018A400FF52B7 /* PutGameItemRequest.swift */; };
+		F8A07EB728501A1700FF52B7 /* PutGameItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A07EB628501A1700FF52B7 /* PutGameItemResponse.swift */; };
+		F8A07EB92851614B00FF52B7 /* VotingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A07EB82851614B00FF52B7 /* VotingView.swift */; };
+		F8A07EBB2851618D00FF52B7 /* VotingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A07EBA2851618D00FF52B7 /* VotingViewModel.swift */; };
+		F8A07EBD28517A0B00FF52B7 /* VoteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A07EBC28517A0B00FF52B7 /* VoteRequest.swift */; };
+		F8A07EC32854D12400FF52B7 /* GameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A07EC22854D12400FF52B7 /* GameResponse.swift */; };
+		F8A83C262752FBAF0072F834 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A83C252752FBAF0072F834 /* RootViewModel.swift */; };
+		F8A83C28275305100072F834 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A83C27275305100072F834 /* AccountViewModel.swift */; };
+		F8D12690285E66170084FD74 /* GamePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D1268F285E66170084FD74 /* GamePlayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F84CA7522752AF4200861575 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84CA7392752AF4000861575 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F84CA7402752AF4000861575;
+			remoteInfo = PlanningPokerMobile;
+		};
+		F84CA75C2752AF4200861575 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F84CA7392752AF4000861575 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F84CA7402752AF4000861575;
+			remoteInfo = PlanningPokerMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8215AAA28566C710025EB81 /* InvitePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitePlayerView.swift; sourceTree = "<group>"; };
+		F8215AAC28566DCE0025EB81 /* InviteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteViewModel.swift; sourceTree = "<group>"; };
+		F8215AAE285AA9660025EB81 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		F8215AB0285BFBC50025EB81 /* JoinGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGameView.swift; sourceTree = "<group>"; };
+		F8215AB2285BFC560025EB81 /* JoinGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGameViewModel.swift; sourceTree = "<group>"; };
+		F84CA7412752AF4000861575 /* PlanningPokerMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanningPokerMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84CA7442752AF4000861575 /* PlanningPokerMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningPokerMobileApp.swift; sourceTree = "<group>"; };
+		F84CA7462752AF4000861575 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F84CA7482752AF4200861575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F84CA74B2752AF4200861575 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F84CA7512752AF4200861575 /* PlanningPokerMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanningPokerMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84CA7552752AF4200861575 /* PlanningPokerMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningPokerMobileTests.swift; sourceTree = "<group>"; };
+		F84CA75B2752AF4200861575 /* PlanningPokerMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanningPokerMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84CA75F2752AF4200861575 /* PlanningPokerMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningPokerMobileUITests.swift; sourceTree = "<group>"; };
+		F84CA7612752AF4200861575 /* PlanningPokerMobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningPokerMobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F84CA7752752B14600861575 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F84CA7782752B5EE00861575 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F84CA77A2752B63500861575 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F84CA77C2752B66600861575 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		F84CA77E2752B6A800861575 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		F84CA7802752B6D400861575 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		F84CA7842752BC3A00861575 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F84CA7862752BCF200861575 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F84CA7882752CD9900861575 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		F84CA78B2752DE4D00861575 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		F84CA78E2752E16800861575 /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		F84CA7912752E1A900861575 /* local.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = local.xcconfig; sourceTree = "<group>"; };
+		F84CA7922752E1FA00861575 /* dev.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
+		F84CA7932752E1FA00861575 /* prod.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = prod.xcconfig; sourceTree = "<group>"; };
+		F84CA79E2752E24800861575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F84CA79F2752E41300861575 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		F852C01F284C2DC700C4D750 /* CreateGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameView.swift; sourceTree = "<group>"; };
+		F852C021284C2E1400C4D750 /* QuickGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickGameViewModel.swift; sourceTree = "<group>"; };
+		F852C023284C2E7C00C4D750 /* QuickGameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickGameResponse.swift; sourceTree = "<group>"; };
+		F852C025284C307F00C4D750 /* QuickGameRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickGameRequest.swift; sourceTree = "<group>"; };
+		F852C027284CEFF700C4D750 /* PlanningPokerGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningPokerGame.swift; sourceTree = "<group>"; };
+		F852C029284CFC3400C4D750 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		F852C02B284CFC5200C4D750 /* PokerGameItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerGameItem.swift; sourceTree = "<group>"; };
+		F8938AAB28620F6E00C62A12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F8938ABA286295B500C62A12 /* ErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewModel.swift; sourceTree = "<group>"; };
+		F8A07EB0284EC13500FF52B7 /* AddGameItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGameItemViewModel.swift; sourceTree = "<group>"; };
+		F8A07EB2284EC80200FF52B7 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		F8A07EB4285018A400FF52B7 /* PutGameItemRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutGameItemRequest.swift; sourceTree = "<group>"; };
+		F8A07EB628501A1700FF52B7 /* PutGameItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutGameItemResponse.swift; sourceTree = "<group>"; };
+		F8A07EB82851614B00FF52B7 /* VotingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingView.swift; sourceTree = "<group>"; };
+		F8A07EBA2851618D00FF52B7 /* VotingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingViewModel.swift; sourceTree = "<group>"; };
+		F8A07EBC28517A0B00FF52B7 /* VoteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteRequest.swift; sourceTree = "<group>"; };
+		F8A07EC22854D12400FF52B7 /* GameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResponse.swift; sourceTree = "<group>"; };
+		F8A83C252752FBAF0072F834 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		F8A83C27275305100072F834 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		F8D1268F285E66170084FD74 /* GamePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F84CA73E2752AF4000861575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84CA7722752B10B00861575 /* RealmSwift in Frameworks */,
+				F8938AB1286210FA00C62A12 /* FirebaseCrashlytics in Frameworks */,
+				F8938AB5286210FA00C62A12 /* FirebasePerformance in Frameworks */,
+				F84CA7702752B10B00861575 /* Realm in Frameworks */,
+				F8938AAF286210FA00C62A12 /* FirebaseAnalytics in Frameworks */,
+				F8938AB3286210FA00C62A12 /* FirebaseInstallations in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84CA74E2752AF4200861575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84CA7582752AF4200861575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F84CA7382752AF4000861575 = {
+			isa = PBXGroup;
+			children = (
+				F84CA7902752E19700861575 /* config */,
+				F84CA7432752AF4000861575 /* PlanningPokerMobile */,
+				F84CA7542752AF4200861575 /* PlanningPokerMobileTests */,
+				F84CA75E2752AF4200861575 /* PlanningPokerMobileUITests */,
+				F84CA7422752AF4000861575 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F84CA7422752AF4000861575 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA7412752AF4000861575 /* PlanningPokerMobile.app */,
+				F84CA7512752AF4200861575 /* PlanningPokerMobileTests.xctest */,
+				F84CA75B2752AF4200861575 /* PlanningPokerMobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F84CA7432752AF4000861575 /* PlanningPokerMobile */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA79E2752E24800861575 /* Info.plist */,
+				F8938AAB28620F6E00C62A12 /* GoogleService-Info.plist */,
+				F84CA78D2752E15A00861575 /* util */,
+				F84CA78A2752DE3B00861575 /* dto */,
+				F84CA7832752BAE900861575 /* viewmodels */,
+				F84CA7772752B37400861575 /* view */,
+				F84CA7742752B13400861575 /* model */,
+				F84CA7732752B11D00861575 /* api */,
+				F84CA7442752AF4000861575 /* PlanningPokerMobileApp.swift */,
+				F84CA7462752AF4000861575 /* ContentView.swift */,
+				F84CA7482752AF4200861575 /* Assets.xcassets */,
+				F84CA74A2752AF4200861575 /* Preview Content */,
+			);
+			path = PlanningPokerMobile;
+			sourceTree = "<group>";
+		};
+		F84CA74A2752AF4200861575 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA74B2752AF4200861575 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F84CA7542752AF4200861575 /* PlanningPokerMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA7552752AF4200861575 /* PlanningPokerMobileTests.swift */,
+			);
+			path = PlanningPokerMobileTests;
+			sourceTree = "<group>";
+		};
+		F84CA75E2752AF4200861575 /* PlanningPokerMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA75F2752AF4200861575 /* PlanningPokerMobileUITests.swift */,
+				F84CA7612752AF4200861575 /* PlanningPokerMobileUITestsLaunchTests.swift */,
+			);
+			path = PlanningPokerMobileUITests;
+			sourceTree = "<group>";
+		};
+		F84CA7732752B11D00861575 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA7882752CD9900861575 /* ApiClient.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		F84CA7742752B13400861575 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA7752752B14600861575 /* User.swift */,
+				F852C027284CEFF700C4D750 /* PlanningPokerGame.swift */,
+				F852C02B284CFC5200C4D750 /* PokerGameItem.swift */,
+				F8D1268F285E66170084FD74 /* GamePlayer.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F84CA7772752B37400861575 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA7842752BC3A00861575 /* LoginView.swift */,
+				F84CA7822752B9BF00861575 /* components */,
+				F84CA7782752B5EE00861575 /* WelcomeView.swift */,
+				F84CA77A2752B63500861575 /* MainView.swift */,
+				F84CA77C2752B66600861575 /* TeamView.swift */,
+				F84CA77E2752B6A800861575 /* GameView.swift */,
+				F84CA7802752B6D400861575 /* AccountView.swift */,
+				F852C01F284C2DC700C4D750 /* CreateGameView.swift */,
+				F8A07EB2284EC80200FF52B7 /* AddItemView.swift */,
+				F8A07EB82851614B00FF52B7 /* VotingView.swift */,
+				F8215AAA28566C710025EB81 /* InvitePlayerView.swift */,
+				F8215AB0285BFBC50025EB81 /* JoinGameView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F84CA7822752B9BF00861575 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				F8215AAE285AA9660025EB81 /* ButtonView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		F84CA7832752BAE900861575 /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA7862752BCF200861575 /* LoginViewModel.swift */,
+				F8A83C252752FBAF0072F834 /* RootViewModel.swift */,
+				F8A83C27275305100072F834 /* AccountViewModel.swift */,
+				F852C021284C2E1400C4D750 /* QuickGameViewModel.swift */,
+				F852C029284CFC3400C4D750 /* GameViewModel.swift */,
+				F8A07EB0284EC13500FF52B7 /* AddGameItemViewModel.swift */,
+				F8A07EBA2851618D00FF52B7 /* VotingViewModel.swift */,
+				F8215AAC28566DCE0025EB81 /* InviteViewModel.swift */,
+				F8215AB2285BFC560025EB81 /* JoinGameViewModel.swift */,
+				F8938ABA286295B500C62A12 /* ErrorViewModel.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
+		F84CA78A2752DE3B00861575 /* dto */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA78B2752DE4D00861575 /* LoginRequest.swift */,
+				F84CA79F2752E41300861575 /* LoginResponse.swift */,
+				F852C023284C2E7C00C4D750 /* QuickGameResponse.swift */,
+				F852C025284C307F00C4D750 /* QuickGameRequest.swift */,
+				F8A07EB4285018A400FF52B7 /* PutGameItemRequest.swift */,
+				F8A07EB628501A1700FF52B7 /* PutGameItemResponse.swift */,
+				F8A07EBC28517A0B00FF52B7 /* VoteRequest.swift */,
+				F8A07EC22854D12400FF52B7 /* GameResponse.swift */,
+			);
+			path = dto;
+			sourceTree = "<group>";
+		};
+		F84CA78D2752E15A00861575 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA78E2752E16800861575 /* AppUtils.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		F84CA7902752E19700861575 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				F84CA7912752E1A900861575 /* local.xcconfig */,
+				F84CA7922752E1FA00861575 /* dev.xcconfig */,
+				F84CA7932752E1FA00861575 /* prod.xcconfig */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F84CA7402752AF4000861575 /* PlanningPokerMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F84CA7652752AF4200861575 /* Build configuration list for PBXNativeTarget "PlanningPokerMobile" */;
+			buildPhases = (
+				F84CA73D2752AF4000861575 /* Sources */,
+				F84CA73E2752AF4000861575 /* Frameworks */,
+				F84CA73F2752AF4000861575 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlanningPokerMobile;
+			packageProductDependencies = (
+				F84CA76F2752B10B00861575 /* Realm */,
+				F84CA7712752B10B00861575 /* RealmSwift */,
+				F8938AAE286210FA00C62A12 /* FirebaseAnalytics */,
+				F8938AB0286210FA00C62A12 /* FirebaseCrashlytics */,
+				F8938AB2286210FA00C62A12 /* FirebaseInstallations */,
+				F8938AB4286210FA00C62A12 /* FirebasePerformance */,
+			);
+			productName = PlanningPokerMobile;
+			productReference = F84CA7412752AF4000861575 /* PlanningPokerMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F84CA7502752AF4200861575 /* PlanningPokerMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F84CA7682752AF4200861575 /* Build configuration list for PBXNativeTarget "PlanningPokerMobileTests" */;
+			buildPhases = (
+				F84CA74D2752AF4200861575 /* Sources */,
+				F84CA74E2752AF4200861575 /* Frameworks */,
+				F84CA74F2752AF4200861575 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F84CA7532752AF4200861575 /* PBXTargetDependency */,
+			);
+			name = PlanningPokerMobileTests;
+			productName = PlanningPokerMobileTests;
+			productReference = F84CA7512752AF4200861575 /* PlanningPokerMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F84CA75A2752AF4200861575 /* PlanningPokerMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F84CA76B2752AF4200861575 /* Build configuration list for PBXNativeTarget "PlanningPokerMobileUITests" */;
+			buildPhases = (
+				F84CA7572752AF4200861575 /* Sources */,
+				F84CA7582752AF4200861575 /* Frameworks */,
+				F84CA7592752AF4200861575 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F84CA75D2752AF4200861575 /* PBXTargetDependency */,
+			);
+			name = PlanningPokerMobileUITests;
+			productName = PlanningPokerMobileUITests;
+			productReference = F84CA75B2752AF4200861575 /* PlanningPokerMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F84CA7392752AF4000861575 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					F84CA7402752AF4000861575 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					F84CA7502752AF4200861575 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = F84CA7402752AF4000861575;
+					};
+					F84CA75A2752AF4200861575 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = F84CA7402752AF4000861575;
+					};
+				};
+			};
+			buildConfigurationList = F84CA73C2752AF4000861575 /* Build configuration list for PBXProject "PlanningPokerMobile" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F84CA7382752AF4000861575;
+			packageReferences = (
+				F84CA76E2752B10B00861575 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				F8938AAD286210FA00C62A12 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F84CA7422752AF4000861575 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F84CA7402752AF4000861575 /* PlanningPokerMobile */,
+				F84CA7502752AF4200861575 /* PlanningPokerMobileTests */,
+				F84CA75A2752AF4200861575 /* PlanningPokerMobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F84CA73F2752AF4000861575 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84CA7942752E1FA00861575 /* dev.xcconfig in Resources */,
+				F84CA7952752E1FA00861575 /* prod.xcconfig in Resources */,
+				F8938AAC28620F6E00C62A12 /* GoogleService-Info.plist in Resources */,
+				F84CA74C2752AF4200861575 /* Preview Assets.xcassets in Resources */,
+				F84CA7492752AF4200861575 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84CA74F2752AF4200861575 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84CA7592752AF4200861575 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F84CA73D2752AF4000861575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8215AB1285BFBC50025EB81 /* JoinGameView.swift in Sources */,
+				F852C020284C2DC700C4D750 /* CreateGameView.swift in Sources */,
+				F84CA7892752CD9900861575 /* ApiClient.swift in Sources */,
+				F8D12690285E66170084FD74 /* GamePlayer.swift in Sources */,
+				F8A83C262752FBAF0072F834 /* RootViewModel.swift in Sources */,
+				F8215AB3285BFC560025EB81 /* JoinGameViewModel.swift in Sources */,
+				F84CA7472752AF4000861575 /* ContentView.swift in Sources */,
+				F8215AAF285AA9660025EB81 /* ButtonView.swift in Sources */,
+				F8A07EBB2851618D00FF52B7 /* VotingViewModel.swift in Sources */,
+				F84CA7452752AF4000861575 /* PlanningPokerMobileApp.swift in Sources */,
+				F8A07EC32854D12400FF52B7 /* GameResponse.swift in Sources */,
+				F84CA78F2752E16800861575 /* AppUtils.swift in Sources */,
+				F8215AAD28566DCE0025EB81 /* InviteViewModel.swift in Sources */,
+				F8215AAB28566C710025EB81 /* InvitePlayerView.swift in Sources */,
+				F852C02C284CFC5200C4D750 /* PokerGameItem.swift in Sources */,
+				F84CA78C2752DE4D00861575 /* LoginRequest.swift in Sources */,
+				F84CA7762752B14600861575 /* User.swift in Sources */,
+				F84CA7A02752E41300861575 /* LoginResponse.swift in Sources */,
+				F84CA7852752BC3A00861575 /* LoginView.swift in Sources */,
+				F8A07EB1284EC13600FF52B7 /* AddGameItemViewModel.swift in Sources */,
+				F8A07EB5285018A400FF52B7 /* PutGameItemRequest.swift in Sources */,
+				F84CA77B2752B63500861575 /* MainView.swift in Sources */,
+				F8A07EBD28517A0B00FF52B7 /* VoteRequest.swift in Sources */,
+				F8A07EB728501A1700FF52B7 /* PutGameItemResponse.swift in Sources */,
+				F8A83C28275305100072F834 /* AccountViewModel.swift in Sources */,
+				F8938ABB286295B500C62A12 /* ErrorViewModel.swift in Sources */,
+				F84CA7812752B6D400861575 /* AccountView.swift in Sources */,
+				F8A07EB92851614B00FF52B7 /* VotingView.swift in Sources */,
+				F84CA7792752B5EE00861575 /* WelcomeView.swift in Sources */,
+				F852C02A284CFC3400C4D750 /* GameViewModel.swift in Sources */,
+				F852C022284C2E1400C4D750 /* QuickGameViewModel.swift in Sources */,
+				F84CA77D2752B66600861575 /* TeamView.swift in Sources */,
+				F852C028284CEFF800C4D750 /* PlanningPokerGame.swift in Sources */,
+				F84CA7872752BCF200861575 /* LoginViewModel.swift in Sources */,
+				F852C026284C307F00C4D750 /* QuickGameRequest.swift in Sources */,
+				F852C024284C2E7C00C4D750 /* QuickGameResponse.swift in Sources */,
+				F84CA77F2752B6A800861575 /* GameView.swift in Sources */,
+				F8A07EB3284EC80200FF52B7 /* AddItemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84CA74D2752AF4200861575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84CA7562752AF4200861575 /* PlanningPokerMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F84CA7572752AF4200861575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84CA7602752AF4200861575 /* PlanningPokerMobileUITests.swift in Sources */,
+				F84CA7622752AF4200861575 /* PlanningPokerMobileUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F84CA7532752AF4200861575 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F84CA7402752AF4000861575 /* PlanningPokerMobile */;
+			targetProxy = F84CA7522752AF4200861575 /* PBXContainerItemProxy */;
+		};
+		F84CA75D2752AF4200861575 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F84CA7402752AF4000861575 /* PlanningPokerMobile */;
+			targetProxy = F84CA75C2752AF4200861575 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F84CA7632752AF4200861575 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Dev;
+		};
+		F84CA7642752AF4200861575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F84CA7662752AF4200861575 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84CA7922752E1FA00861575 /* dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"PlanningPokerMobile/Preview Content\"";
+				DEVELOPMENT_TEAM = CVPA5E6TSE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanningPokerMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Easy Planner";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.planningpoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "planning-poker-dev";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Dev;
+		};
+		F84CA7672752AF4200861575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84CA7932752E1FA00861575 /* prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"PlanningPokerMobile/Preview Content\"";
+				DEVELOPMENT_TEAM = CVPA5E6TSE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanningPokerMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Easy Planner";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.planningpoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "planning-poker-dev";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F84CA7692752AF4200861575 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.PlanningPokerMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlanningPokerMobile.app/PlanningPokerMobile";
+			};
+			name = Dev;
+		};
+		F84CA76A2752AF4200861575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.PlanningPokerMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlanningPokerMobile.app/PlanningPokerMobile";
+			};
+			name = Release;
+		};
+		F84CA76C2752AF4200861575 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.PlanningPokerMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlanningPokerMobile;
+			};
+			name = Dev;
+		};
+		F84CA76D2752AF4200861575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.PlanningPokerMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlanningPokerMobile;
+			};
+			name = Release;
+		};
+		F84CA7962752E20400861575 /* Local */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Local;
+		};
+		F84CA7972752E20400861575 /* Local */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84CA7912752E1A900861575 /* local.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"PlanningPokerMobile/Preview Content\"";
+				DEVELOPMENT_TEAM = CVPA5E6TSE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanningPokerMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Easy Planner";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.planningpoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "planning-poker-dev";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Local;
+		};
+		F84CA7982752E20400861575 /* Local */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.PlanningPokerMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlanningPokerMobile.app/PlanningPokerMobile";
+			};
+			name = Local;
+		};
+		F84CA7992752E20400861575 /* Local */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.PlanningPokerMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlanningPokerMobile;
+			};
+			name = Local;
+		};
+		F84CA79A2752E21100861575 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Prod;
+		};
+		F84CA79B2752E21100861575 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84CA7932752E1FA00861575 /* prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"PlanningPokerMobile/Preview Content\"";
+				DEVELOPMENT_TEAM = CVPA5E6TSE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanningPokerMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Easy Planner";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.planningpoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "planning-poker-dev";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Prod;
+		};
+		F84CA79C2752E21100861575 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.PlanningPokerMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlanningPokerMobile.app/PlanningPokerMobile";
+			};
+			name = Prod;
+		};
+		F84CA79D2752E21100861575 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.PlanningPokerMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlanningPokerMobile;
+			};
+			name = Prod;
+		};
+		F8938AB6286211B600C62A12 /* DevAdhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = DevAdhoc;
+		};
+		F8938AB7286211B600C62A12 /* DevAdhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84CA7922752E1FA00861575 /* dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"PlanningPokerMobile/Preview Content\"";
+				DEVELOPMENT_TEAM = CVPA5E6TSE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanningPokerMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Easy Planner";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.planningpoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "planning-poker-adhoc";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DevAdhoc;
+		};
+		F8938AB8286211B600C62A12 /* DevAdhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.PlanningPokerMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlanningPokerMobile.app/PlanningPokerMobile";
+			};
+			name = DevAdhoc;
+		};
+		F8938AB9286211B600C62A12 /* DevAdhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanley.PlanningPokerMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlanningPokerMobile;
+			};
+			name = DevAdhoc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F84CA73C2752AF4000861575 /* Build configuration list for PBXProject "PlanningPokerMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84CA7632752AF4200861575 /* Dev */,
+				F8938AB6286211B600C62A12 /* DevAdhoc */,
+				F84CA79A2752E21100861575 /* Prod */,
+				F84CA7962752E20400861575 /* Local */,
+				F84CA7642752AF4200861575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = DevAdhoc;
+		};
+		F84CA7652752AF4200861575 /* Build configuration list for PBXNativeTarget "PlanningPokerMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84CA7662752AF4200861575 /* Dev */,
+				F8938AB7286211B600C62A12 /* DevAdhoc */,
+				F84CA79B2752E21100861575 /* Prod */,
+				F84CA7972752E20400861575 /* Local */,
+				F84CA7672752AF4200861575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = DevAdhoc;
+		};
+		F84CA7682752AF4200861575 /* Build configuration list for PBXNativeTarget "PlanningPokerMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84CA7692752AF4200861575 /* Dev */,
+				F8938AB8286211B600C62A12 /* DevAdhoc */,
+				F84CA79C2752E21100861575 /* Prod */,
+				F84CA7982752E20400861575 /* Local */,
+				F84CA76A2752AF4200861575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = DevAdhoc;
+		};
+		F84CA76B2752AF4200861575 /* Build configuration list for PBXNativeTarget "PlanningPokerMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84CA76C2752AF4200861575 /* Dev */,
+				F8938AB9286211B600C62A12 /* DevAdhoc */,
+				F84CA79D2752E21100861575 /* Prod */,
+				F84CA7992752E20400861575 /* Local */,
+				F84CA76D2752AF4200861575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = DevAdhoc;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F84CA76E2752B10B00861575 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.0;
+			};
+		};
+		F8938AAD286210FA00C62A12 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F84CA76F2752B10B00861575 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F84CA76E2752B10B00861575 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		F84CA7712752B10B00861575 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F84CA76E2752B10B00861575 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		F8938AAE286210FA00C62A12 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8938AAD286210FA00C62A12 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F8938AB0286210FA00C62A12 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8938AAD286210FA00C62A12 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		F8938AB2286210FA00C62A12 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8938AAD286210FA00C62A12 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		F8938AB4286210FA00C62A12 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8938AAD286210FA00C62A12 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F84CA7392752AF4000861575 /* Project object */;
+}
